@@ -56,10 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Runtime\NavMeshSurface.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Runtime\HelpUrls.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Runtime\NavMeshModifier.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Runtime\NavMeshModifierVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Runtime\HelpUrls.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Runtime\NavMeshLink.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Runtime\NavMeshModifierVolume.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\Runtime\Unity.AI.Navigation.asmdef" />
@@ -319,6 +319,18 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>Z:\Program Files\Unity Hub\2022.3.12f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>Z:\Program Files\Unity Hub\2022.3.12f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -686,5 +698,9 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>Z:\Program Files\Unity Hub\2022.3.12f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityEditor.UI.csproj" />
+    <ProjectReference Include="UnityEngine.UI.csproj" />
   </ItemGroup>
 </Project>
